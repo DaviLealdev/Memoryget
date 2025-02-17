@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory get</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 id="titulo">Memory Get</h1>
+        <input type="text" id="search-input" placeholder="Pesquisar tópicos...">
+
+        <button id="theme-toggle">🌙</button>
+        <button onclick="window.location.href='create.html'">Criar</button>
+    </nav>
+    
+    <main>
+        <section id="stats">
+            <h2>Estatísticas</h2>
+            <p>Total de tópicos criados: <span id="topic-count">0</span></p>
+            <h3>Linguagens de Programação</h3>
+            <p>Python: <span id="python-count">0</span></p>
+            <p>JavaScript: <span id="js-count">0</span></p>
+            <p>C/C++: <span id="cpp-count">0</span></p>
+            <p>Java: <span id="java-count">0</span></p>
+            <p>Outras: <span id="other-lang-count">0</span></p>
+            
+            <h3>Frameworks & Bibliotecas</h3>
+            <p>React: <span id="react-count">0</span></p>
+            <p>Vue.js: <span id="vue-count">0</span></p>
+            <p>Angular: <span id="angular-count">0</span></p>
+            <p>Django: <span id="django-count">0</span></p>
+            <p>Flask: <span id="flask-count">0</span></p>
+            <p>Outros: <span id="other-framework-count">0</span></p>
+            
+            <h3>Conceitos e Algoritmos</h3>
+            <p>Estruturas de Dados: <span id="data-structures-count">0</span></p>
+            <p>Algoritmos: <span id="algorithms-count">0</span></p>
+            <p>Padrões de Projeto: <span id="design-patterns-count">0</span></p>
+            <p>Banco de Dados: <span id="database-count">0</span></p>
+            <p>Outros: <span id="other-concepts-count">0</span></p>
+        </section>
+        
+        <section id="topics">
+            <h2>Lista de Tópicos</h2>
+            <div id="topic-list"></div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
