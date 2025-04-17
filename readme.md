@@ -5,8 +5,8 @@
 ### 🟩 Para Usa-lo Você apenas Precisa Entrar lá Criar Um Tópico,escolher o título,a tag (se te for útil) e o assunto na qual Você Quer Explicar a si mesmo ou a alguém
 ### 🟩 As Tags São todas para programadores Na Primeira Versão Mas em um Futuro Próximo Ele terá a tag que você Escolher
 ### 🟩 Se Quiser Fazer Sua Versão só dar um clone no git e pronto, Caso Não queira fazer o seu e queira me dar ideias  Do Que Colocar, pode me chamar no instagram NO Meu Perfil Ou Usar O FAQ no próprio mem get (se ele já tiver pronto).
-### 🟦 Versão 1.0.0
+### 🟦 Versão 1.5.0
 
 ### Tecnologias Usadas Até Agora:
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,git,markdown)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,bootstrap,git,markdown)](https://skillicons.dev)
 

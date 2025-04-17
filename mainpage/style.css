@@ -1,0 +1,27 @@
+
+:root{
+    --preto:rgb(0, 0, 0);
+    --cinza:rgb(47, 47, 47);
+    --amarelo:rgb(246, 249, 48);
+    --verde:rgb(210, 248, 152);
+    --branco:rgb(252, 252, 252);
+  }
+
+#left-nav{
+    /*tamanho e cor*/
+    width: 300px;
+    height: 712px;
+    background-color:var(--cinza);
+}
+
+#tópicos{
+  background-color:rgba(47, 47, 47, 0.877);
+  width: 300px;
+  height: 712px;
+  padding-left: 10px;
+}
+
+
+li > a.dropdown-item > img{
+width: 25px;
+}

@@ -7,4 +7,4 @@
 - Aprofundando: Tente explicar a fundo, com exemplos, com explicações mais específicas e etc
 - ensinando: finja que está ensinando para alguém, faça o "roteiro de um tutorial", explique isso para você mesmo, de uma maneira que QUALQUER UM possa entender
 
-3 Estrutura do Site: uma página html que vai ser a principal, onde vai ficar as opções de: criar os posts, uma aba dos posts já postados,um navbar contendo 4 opções, ultimos posts,por linguagem, por data (mês),por categoria, uma seção onde ficam os tópicos,uma seção onde você pode filtrar os tópicos, eu escolho o assunto e ele filtra os tópicos pelo assunto
+3 Estrutura do Site: uma página html que vai ser a principal, onde vai ficar as opções de: criar os posts, uma aba dos posts já postados,um navbar contendo 4 opções, ultimos posts,por linguagem, por mês,por categoria, uma seção onde ficam os tópicos,uma seção onde você pode filtrar os tópicos, eu escolho o assunto e ele filtra os tópicos pelo assunto
