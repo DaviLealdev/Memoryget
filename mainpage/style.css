@@ -7,14 +7,18 @@
     --branco:rgb(252, 252, 252);
   }
 
+
 #left-nav{
     /*tamanho e cor*/
     width: 300px;
     height: 712px;
     background-color:var(--cinza);
+    float: left;
+    
+    
 }
 
-#tópicos{
+#options{
   background-color:rgba(47, 47, 47, 0.877);
   width: 300px;
   height: 712px;
@@ -24,4 +28,42 @@
 
 li > a.dropdown-item > img{
 width: 25px;
+}
+
+svg{
+  color: black;
+  
+}
+
+main{
+  background-image:linear-gradient(to bottom right,rgb(47, 47, 47),rgb(58, 58, 58));
+  width: 1200px;
+  height: 600px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 320px;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+
+
+#topic{
+  background-color: rgb(29, 29, 29);
+  width: 950px;
+  height: 200px;
+  padding: 20px;
+
+  margin: auto;
+  color: rgb(251, 255, 0);
+  border-radius: 10px;
+  
+}
+
+#hora-do-post{
+  color: rgb(255, 255, 0);
+}
+
+#dia-do-post{
+  color: rgb(221, 255, 0);
 }
