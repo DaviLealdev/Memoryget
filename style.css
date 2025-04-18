@@ -42,8 +42,9 @@ main{
   border-radius: 10px;
   margin-top: 50px;
   margin-left: 320px;
-  overflow: hidden;
+ 
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 
