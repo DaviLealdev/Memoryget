@@ -3,11 +3,12 @@ let content = localStorage.getItem('conteudoPost')
 
 window.onload = function carrega(){
 var main = document.getElementById('topicos');
-let topic = main.innerHTML = `  
+let topic =  document.createElement("div")
+topic.innerHTML = `  
       <div id="topic">
 
           <h2 id="topic-title">${title}</h2>
-          <h5 id="topic-prev">${content}</h5>
+          <h5 id="topic-prev">${content.substring(0, 20)}.....</h5>
 
           <button type="button" class="btn btn-warning">Ver Tudo</button>
 
@@ -20,6 +21,8 @@ let topic = main.innerHTML = `
           </button>
       </div>
   <br>`
-localStorage.setItem("topic", )
+
+let adicionaTópico = main.appendChild(topic)
+localStorage.setItem("add", adicionaTópico)
 
 }
