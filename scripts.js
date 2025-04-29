@@ -17,6 +17,6 @@ alert("Você Não Escreveu Nada, Quer Postar O que?")
 
 else{
 //alert("Tópico Postado!")
-window.open("index.html", );
+window.open("index.html");
 }
 }
