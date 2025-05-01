@@ -100,12 +100,10 @@
                   </li>
                 </ul>
                 <!-- seção da Barra de pesquisa: -->
-                <form class="d-flex" role="search">
-                  <!-- Searchbar aqui: -->
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <!-- Botão de pesquisar -->
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onkeyup="pesquisar()" id="searchbar">
                   <button class="btn btn-warning" type="submit">Search</button>
-                </form>
+                </form> -->
 
               </div>
             </div>
@@ -194,37 +192,7 @@
       <br>
       <br>
       <!-- Começo do segundo botão -->
-      [<div class="btn-group">
-        <button type="button" class="btn btn-warning dropdown-toggle" style="width: 250px; font-weight: 600; "   data-bs-toggle="dropdown" aria-expanded="false">
-          Filtrar Por Mês
-        </button>
-        <ul class="dropdown-menu" style="width: 230px;">
-          <li><a class="dropdown-item" id="jan" href="#">Janeiro</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="fev" href="#">Fevereiro</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="mar" href="#">março</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="abr" href="#">abril</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="mai" href="#">maio</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="jun" href="#">junho</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="jul" href="#">julho</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="ago" href="#">agosto</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="set" href="#">setembro</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="out" href="#">outubro</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="nov" href="#">novembro</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" id="dez" href="#">dezembro</a></li>
-        </ul>
-        
-      </div>]
+     
 
         <div id="counter">
           <br>
@@ -234,9 +202,11 @@
 </section>
   
 <main id="topicos">
- 
+  <h1 style="display: block;margin-top: 300px; text-align: center;" id="aviso">Poste Seu Tópico clicando em <a href="create.html">Criar Tópico</a></h1>
 </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+  
 </body>
 </html>

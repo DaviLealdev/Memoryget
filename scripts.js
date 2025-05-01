@@ -12,7 +12,7 @@ currentValues.push(post)
 //Criar a Prévia no  index.html
 localStorage.setItem('posts',JSON.stringify(currentValues));
 if (titleInput == "" || contentInput == "" ){
-alert("Você Não Escreveu Nada, Quer Postar O que?")
+alert("Você Não Escreveu Nada, Não Há o Que Postar")
 } 
 
 else{
