@@ -32,9 +32,6 @@ for(let i = 0; i < posts.length; i++ ){
         
 function abrirTopico(){
   window.open("view.html")
-  let title = getElementById("topic-title")
-  let content = getElementById("topic-content")
- 
 }
 
 function deletarPost(title){
