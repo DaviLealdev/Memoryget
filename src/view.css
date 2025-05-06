@@ -1,0 +1,15 @@
+#topic-title{
+    text-align: center;
+    font-size: 50px;
+}
+#topic-content{
+    text-align: center;
+    font-size: 18px;
+    padding-left: 450px;
+    padding-right: 450px;
+}
+#viewPost{
+    padding: 20px;
+    
+    margin: auto;
+}

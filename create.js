@@ -9,14 +9,12 @@ const post = {titleInput, contentInput}
 let currentValues = JSON.parse(localStorage.getItem('posts')) || []
 currentValues.push(post)
 
-//Criar a Prévia no  index.html
 localStorage.setItem('posts',JSON.stringify(currentValues));
 if (titleInput == "" || contentInput == "" ){
 alert("Você Não Escreveu Nada, Não Há o Que Postar")
 } 
-
-else{
+else if (titleInput != "" && contentInput != ""){
 //alert("Tópico Postado!")
-window.open("index.html");
+window.open("index.html", "_self");
 }
 }
