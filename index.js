@@ -37,9 +37,20 @@ function abrirTopico(index){
   window.open("view.html", "_self")
 }
 
-
 function deletarPost(title){
     const filtered = posts.filter(x => x.titleInput != title)
     localStorage.setItem("posts", JSON.stringify(filtered))
     location.reload()
+}
+
+function showBar(){
+  let lnav = document.getElementById("left-nav")
+      lnav.style.display = 'block'
+}
+
+function hideBar(){
+    let lnav = document.getElementById("left-nav")
+    if(lnav.style.display = 'block'){
+      lnav.style.display = 'none'
+    }
 }

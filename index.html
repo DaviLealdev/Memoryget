@@ -51,7 +51,7 @@
     <!-- end of the css settings -->
 
 </head>
-<body class="background">
+<body class="background" >
   <!-- NavBar Principal do topo -->
    
 <!-- COMEÇO DA NAVBAR -->
@@ -76,7 +76,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link text-warning" href="#">Configurações</a>
+                    <a class="nav-link text-warning" href="#" onclick="showBar()">Configurações</a>
                   </li>
 
                   <li class="nav-item dropdown">
@@ -112,8 +112,12 @@
       
 <!-- NAVBAR DA ESQUERDA - OPTIONS - FILTROS -->
 
-<section id="left-nav" class="background-black">
+<section id="left-nav" class="background-black ">
+  
   <div id="options">
+    <br>
+    <button style="margin-left: 260px; background-color: rgb(255, 255, 255);" onclick="hideBar()" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <br>
       <br>
       <!-- Começo do Primeiro Botão -->
         [<div class="btn-group">
@@ -200,7 +204,7 @@
         </div>
   </div>
 </section>
-  
+  <br>
 <main id="topicos">
   <h1 style="display: block;margin-top: 300px; text-align: center;" id="aviso">Poste Seu Tópico clicando em <a href="create.html">Criar Tópico</a></h1>
 </main>
