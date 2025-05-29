@@ -12,7 +12,7 @@ for(let i = 0; i < posts.length; i++ ){
                   <h2 id="topic-title">${post.titleInput}</h2>
                   <h5 id="topic-prev">${post.contentInput.slice(0, 20)}.....</h5>
         
-                  <button type="button" class="btn btn-warning" onclick="abrirTopico(${i})">Ver Tudo</button>
+                  <button type="button" class="btn btn-primary" onclick="abrirTopico(${i})">Ver Tudo</button>
 
         
                   <button onclick="deletarPost('${post.titleInput}')" type="button" class="btn btn-danger">
@@ -45,7 +45,9 @@ function deletarPost(title){
 
 function showBar(){
   let lnav = document.getElementById("left-nav")
-      lnav.style.display = 'block'
+  lnav.style.display = 'block'
+  let main = document.getElementById('topicos');
+  main.style.width = "1230px"
 }
 
 function hideBar(){
@@ -53,4 +55,7 @@ function hideBar(){
     if(lnav.style.display = 'block'){
       lnav.style.display = 'none'
     }
+    let main = document.getElementById('topicos');
+    main.style.width = "1530px"
+
 }

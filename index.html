@@ -55,12 +55,10 @@
   <!-- NavBar Principal do topo -->
    
 <!-- COMEÇO DA NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-black " >
+        <nav class="navbar navbar-expand-lg bg-success " >
             <div class="container-fluid"> 
               <!-- Conteúdo do Navbar-->
-              <a class="navbar-brand " href="#">
-                <img id="icone" width="40px" src="images/só a cabeça do soldado.png" alt="">
-              </a>
+            
 
               <!-- Botão pra telas menores -->
               <button class="navbar-toggler " style="background-color: yellow;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,16 +70,16 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                   <li  class="nav-item">
-                    <a class="nav-link active text-warning" aria-current="page" href="create.html" target="_self">Criar Tópico</a>
+                    <a class="nav-link active text-light" aria-current="page" href="create.html" target="_self">Criar Tópico</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link text-warning" href="#" onclick="showBar()">Configurações</a>
+                    <a class="nav-link text-light" href="#" onclick="showBar()">Configurações</a>
                   </li>
 
                   <li class="nav-item dropdown">
                     <!-- Dropdown -->
-                    <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Escolher Categoria
                     </a>
                     <!-- Lista do dropdown (opções) -->
@@ -100,10 +98,10 @@
                   </li>
                 </ul>
                 <!-- seção da Barra de pesquisa: -->
-                <!-- <form class="d-flex" role="search">
+                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onkeyup="pesquisar()" id="searchbar">
-                  <button class="btn btn-warning" type="submit">Search</button>
-                </form> -->
+                  <button class="btn btn-primary" type="submit">Search</button>
+                </form>
 
               </div>
             </div>
@@ -112,101 +110,261 @@
       
 <!-- NAVBAR DA ESQUERDA - OPTIONS - FILTROS -->
 
-<section id="left-nav" class="background-black ">
+<section id="left-nav" >
   
   <div id="options">
     <br>
     <button style="margin-left: 260px; background-color: rgb(255, 255, 255);" onclick="hideBar()" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div id="counter-options">Tópicos Postados: <span class="text-info" id="topics-counter">0</span></div>
       <br>
       <br>
       <!-- Começo do Primeiro Botão -->
-        [<div class="btn-group">
-          <button type="button" class="btn btn-warning dropdown-toggle" style="width: 250px; font-weight: 600;" data-bs-toggle="dropdown" aria-expanded="false">
-            Filtrar por Assuntos
-          </button>
-            <ul class="dropdown-menu" style="width: 230px;">
-              <!-- Lista de Opções -->
-              <!-- OPÇÃO 1 (JS)-->
-              <li>
-                <a class="dropdown-item" href="#">
-                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
-                  Javascript
-                </a>
-              </li>
-
-              <!-- OPÇÃO 2 (python) -->
-              <li>
-                <a class="dropdown-item" href="#">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-                  Python
-                </a>  
-              </li>
-              
-              <!-- OPÇÃO 3 (react)-->
-              <li>
-                <a class="dropdown-item" href="#">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                  React</a>
-              </li>
-              
-              <!-- OPÇÃO 4 (bootstrap)-->
-              <li>
-                <a class="dropdown-item" href="#"> 
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-                    Bootstrap
-                </a>
-              </li>
-
-              <!-- OPÇÃO 5 (git)-->
-              <li>
-                <a class="dropdown-item" href="#">                   
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                  Git 
-                </a>
-              </li>
-
-              <!-- OPÇÃO 6 (github)-->
-              <li>
-                <a class="dropdown-item" href="#">          
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-                  Github
-                </a>
-              </li>
-
-              <!-- OPÇÃO 7 (Flask)-->
-              <li>
-                <a class="dropdown-item" href="#">          
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" />
-                   Flask
-                </a>
-              </li>
-
-                      <li><hr class="dropdown-divider"></li>
-
-              <!-- OPÇÃO 8 (Linux)-->
-              <li>
-                <a class="dropdown-item" href="#">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
-                    Informatica
-                </a>
-              </li>
-                </ul>
-          </div>]
+         [<div class="btn-group">
+        <button type="button" class="btn btn-warning dropdown-toggle" style="width: 250px; font-weight: 600; "   data-bs-toggle="dropdown" aria-expanded="false">
+          Filtrar Por Mês
+        </button>
+        <ul class="dropdown-menu" style="width: 230px;">
+          <li><a class="dropdown-item" id="jan" href="#">Janeiro</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="fev" href="#">Fevereiro</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="mar" href="#">março</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="abr" href="#">abril</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="mai" href="#">maio</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="jun" href="#">junho</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="jul" href="#">julho</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="ago" href="#">agosto</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="set" href="#">setembro</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="out" href="#">outubro</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="nov" href="#">novembro</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="dez" href="#">dezembro</a></li>
+        </ul>
+        
+      </div>]
       <!-- Final Do Primeiro Botão -->
-      <br>
-      <br>
-      <!-- Começo do segundo botão -->
-     
+       <br>
+     <!-- From Uiverse.io by NlghtM4re --> 
+<div class="container">
+  <div class="tree">
+    <div class="branch" style="--x:0">
+      <span style="--i:0;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+    </div>
+    <div class="branch" style="--x:1">
+      <span style="--i:0;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+    </div>
+    <div class="branch" style="--x:2">
+      <span style="--i:0;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+    </div>
+    <div class="branch" style="--x:3">
+      <span style="--i:0;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+    </div>
+    <div class="stem">
+      <span style="--i:0;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+    </div>
+    <span class="shadow"></span>
+  </div>
+</div>
 
-        <div id="counter">
-          <br>
-          <div id="counter-options">Tópicos Postados: <span class="text-info" id="topics-counter">0</span></div>
-        </div>
+        
   </div>
 </section>
-  <br>
+
 <main id="topicos">
-  <h1 style="display: block;margin-top: 300px; text-align: center;" id="aviso">Poste Seu Tópico clicando em <a href="create.html">Criar Tópico</a></h1>
+  <h1 style="display: block;margin-top: 300px; text-align: center;" id="aviso">
+    Poste Seu Tópico clicando em <a href="create.html">Criar Tópico</a>
+  
+<div class="loader">
+  <div class="wrapper">
+    <div class="catContainer">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 733 673"
+        class="catbody"
+      >
+        <path
+          fill="#212121"
+          d="M111.002 139.5C270.502 -24.5001 471.503 2.4997 621.002 139.5C770.501 276.5 768.504 627.5 621.002 649.5C473.5 671.5 246 687.5 111.002 649.5C-23.9964 611.5 -48.4982 303.5 111.002 139.5Z"
+        ></path>
+        <path fill="#212121" d="M184 9L270.603 159H97.3975L184 9Z"></path>
+        <path fill="#212121" d="M541 0L627.603 150H454.397L541 0Z"></path>
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 158 564"
+        class="tail"
+      >
+        <path
+          fill="#191919"
+          d="M5.97602 76.066C-11.1099 41.6747 12.9018 0 51.3036 0V0C71.5336 0 89.8636 12.2558 97.2565 31.0866C173.697 225.792 180.478 345.852 97.0691 536.666C89.7636 553.378 73.0672 564 54.8273 564V564C16.9427 564 -5.4224 521.149 13.0712 488.085C90.2225 350.15 87.9612 241.089 5.97602 76.066Z"
+        ></path>
+      </svg>
+      <div class="text">
+        <span class="bigzzz">Z</span>
+        <span class="zzz">Z</span>
+      </div>
+    </div>
+    <div class="wallContainer">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 500 126"
+        class="wall"
+      >
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="3"
+          x2="450"
+          y1="3"
+          x1="50"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="85"
+          x2="400"
+          y1="85"
+          x1="100"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="122"
+          x2="375"
+          y1="122"
+          x1="125"
+        ></line>
+        <line stroke-width="6" stroke="#7C7C7C" y2="43" x2="500" y1="43"></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="1.99391"
+          x2="115.5"
+          y1="43.0061"
+          x1="115.5"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="2.00002"
+          x2="189"
+          y1="43.0122"
+          x1="189"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="2.00612"
+          x2="262.5"
+          y1="43.0183"
+          x1="262.5"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="2.01222"
+          x2="336"
+          y1="43.0244"
+          x1="336"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="2.01833"
+          x2="409.5"
+          y1="43.0305"
+          x1="409.5"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="43"
+          x2="153"
+          y1="84.0122"
+          x1="153"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="43"
+          x2="228"
+          y1="84.0122"
+          x1="228"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="43"
+          x2="303"
+          y1="84.0122"
+          x1="303"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="43"
+          x2="378"
+          y1="84.0122"
+          x1="378"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="84"
+          x2="192"
+          y1="125.012"
+          x1="192"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="84"
+          x2="267"
+          y1="125.012"
+          x1="267"
+        ></line>
+        <line
+          stroke-width="6"
+          stroke="#7C7C7C"
+          y2="84"
+          x2="342"
+          y1="125.012"
+          x1="342"
+        ></line>
+      </svg>
+    </div>
+  </div>
+</div>
+
+  
+  </h1>
+  
 </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
